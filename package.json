@@ -2,7 +2,7 @@
     "name": "pavan-codeadvent2021",
     "version": "1.0.0",
     "dependencies": {
-      "fs": "0.0.1-security",
-      "lodash": "^4.17.20"
+        "fs": "0.0.1-security",
+        "lodash": "^4.17.20"
     }
-  }
+}
