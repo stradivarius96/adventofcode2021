@@ -1,3 +1,4 @@
+console.time('day5')
 const fs = require('fs')
 const { map } = require('lodash')
 let arr = fs.readFileSync('day5-input.txt').toString().split("\n")
@@ -67,3 +68,5 @@ pointsDiag.forEach(row =>{
 console.log("Part 1 Answer: " + part1)
 
 console.log("Part 2 Answer: " + part2)
+
+console.timeEnd('day5')
