@@ -1,7 +1,5 @@
 const fs = require('fs');
 let arr = fs.readFileSync('day02-input.txt').toString().split("\n");
-const _ = require("lodash");
-
 
 let instructions = []
 let depth = 0
@@ -13,15 +11,15 @@ arr.forEach(row => {
     instructions.push(cmdArr)
 })
 
-for (let i = 0; i < arr.length; i++){
-    
-    if (instructions[i][0] == "forward"){
+for (let i = 0; i < arr.length; i++) {
+
+    if (instructions[i][0] == "forward") {
         horizontalPosition += instructions[i][1]
     }
-    else if (instructions[i][0] == "up"){
+    else if (instructions[i][0] == "up") {
         depth -= instructions[i][1]
     }
-    else if (instructions[i][0] == "down"){
+    else if (instructions[i][0] == "down") {
         depth += instructions[i][1]
     }
 }
@@ -32,16 +30,16 @@ depth = 0
 horizontalPosition = 0
 let aim = 0
 
-for (let i = 0; i < arr.length; i++){
-    
-    if (instructions[i][0] == "forward"){
+for (let i = 0; i < arr.length; i++) {
+
+    if (instructions[i][0] == "forward") {
         horizontalPosition += instructions[i][1]
         depth += instructions[i][1] * aim
     }
-    else if (instructions[i][0] == "up"){
+    else if (instructions[i][0] == "up") {
         aim -= instructions[i][1]
     }
-    else if (instructions[i][0] == "down"){
+    else if (instructions[i][0] == "down") {
         aim += instructions[i][1]
     }
 }

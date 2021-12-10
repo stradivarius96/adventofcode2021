@@ -39,7 +39,6 @@ let arrReduce = _.cloneDeep(arr)
 
 while (oxygenRating == 0) {
     if (arrReduce.length == 1) {
-        console.log(arrReduce)
         oxygenRating = parseInt(arrReduce, 2)
         console.log("Oxygen Rating: " + oxygenRating)
     }

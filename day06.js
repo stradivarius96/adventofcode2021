@@ -8,11 +8,11 @@ arr.forEach((fish, idx) => {
     lanternfish[parseInt(fish)]++
 })
 
-for (let i = 0; i < 80; i ++){
+for (let i = 0; i < 80; i++) {
     lanternfish = nextDay(lanternfish)
 }
 
-function nextDay(lanternfish){
+function nextDay(lanternfish) {
     let newLanternfish = _.clone(lanternfish)
     newLanternfish[8] = lanternfish[0]
     newLanternfish[7] = lanternfish[8]
@@ -30,7 +30,7 @@ function nextDay(lanternfish){
 let part1 = lanternfish.reduce((pv, cv) => pv + cv, 0)
 console.log("Part 1 Answer: " + part1)
 
-for (let i = 0; i < 256 - 80; i ++){
+for (let i = 0; i < 256 - 80; i++) {
     lanternfish = nextDay(lanternfish)
 }
 let part2 = lanternfish.reduce((pv, cv) => pv + cv, 0)

@@ -47,7 +47,7 @@
 
         let numMapInv = _.invert(numMap)
         let display = ""
-        row[1].forEach((num,idx) => {
+        row[1].forEach((num) => {
             display += numMapInv[num]
         })
 
