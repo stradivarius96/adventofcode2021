@@ -1,6 +1,6 @@
-console.time('day09')
+console.time('day9')
 const fs = require('fs')
-let arr = fs.readFileSync('day9-input.txt').toString().split("\n").map(row => row.split("").map(function(item) { return parseInt(item) }))
+let arr = fs.readFileSync('day09-input.txt').toString().split("\n").map(row => row.split("").map(function(item) { return parseInt(item) }))
 
 let localMinimums = []
 let basins = []

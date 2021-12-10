@@ -1,8 +1,8 @@
-console.time('day07')
+console.time('day7')
 const fs = require('fs')
 let _ = require('lodash')
 
-let arr = fs.readFileSync('day7-input.txt').toString().split(",").map(function(item) {return parseInt(item)})
+let arr = fs.readFileSync('day07-input.txt').toString().split(",").map(function(item) {return parseInt(item)})
 
 let arrSort = arr.sort((a,b)=> {return a-b})
 let median = arrSort[arrSort.length/2]
