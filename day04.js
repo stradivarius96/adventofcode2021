@@ -1,5 +1,5 @@
 const fs = require('fs');
-let arr = fs.readFileSync('day4-input.txt').toString().split("\n\n");
+let arr = fs.readFileSync('day04-input.txt').toString().split("\n\n");
 const _ = require("lodash");
 
 let numbers = arr[0].split(',').map(item => {

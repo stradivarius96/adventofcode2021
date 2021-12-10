@@ -1,4 +1,4 @@
-console.time('day9')
+console.time('day09')
 const fs = require('fs')
 let arr = fs.readFileSync('day9-input.txt').toString().split("\n").map(row => row.split("").map(function(item) { return parseInt(item) }))
 

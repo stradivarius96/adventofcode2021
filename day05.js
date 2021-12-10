@@ -1,7 +1,7 @@
 console.time('day5')
 const fs = require('fs')
 const { map } = require('lodash')
-let arr = fs.readFileSync('day5-input.txt').toString().split("\n")
+let arr = fs.readFileSync('day05-input.txt').toString().split("\n")
 const _ = require("lodash")
 
 let points = []

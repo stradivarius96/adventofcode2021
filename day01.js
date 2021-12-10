@@ -1,5 +1,5 @@
 const fs = require('fs');
-let arr = fs.readFileSync('day1-input.txt').toString().split("\n");
+let arr = fs.readFileSync('day01-input.txt').toString().split("\n");
 //arrSort = [...arr].map(x=>+x).sort((a,b)=>a-b)
  console.log(arr.length)
 

@@ -1,6 +1,6 @@
 console.time('day6')
 const fs = require('fs')
-let arr = fs.readFileSync('day6-input.txt').toString().split(",")
+let arr = fs.readFileSync('day06-input.txt').toString().split(",")
 let _ = require('lodash')
 
 let lanternfish = new Array(9).fill(0)

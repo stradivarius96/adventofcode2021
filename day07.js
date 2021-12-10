@@ -1,4 +1,4 @@
-console.time('day7')
+console.time('day07')
 const fs = require('fs')
 let _ = require('lodash')
 
